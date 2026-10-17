@@ -1,0 +1,21 @@
+# 语言统计与 diff 展示规则（只影响 GitHub 侧观感，不影响任何构建/运行）
+
+# JMeter 自动生成的压测报告：不计入语言统计，diff 默认折叠
+benchmark/results/** linguist-generated
+
+# 第三方前端库（Vue / ElementUI / axios）：不计入语言统计
+demo-frontend/js/vue.js linguist-vendored
+demo-frontend/js/element.js linguist-vendored
+demo-frontend/css/element.css linguist-vendored
+demo-frontend/css/fonts/** linguist-vendored
+*.min.js linguist-vendored
+*.min.css linguist-vendored
+
+# 二进制资源，避免被当成文本处理
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.ttf binary
