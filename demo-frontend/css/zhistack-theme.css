@@ -1,0 +1,29 @@
+/* 知栈品牌主题层：在课程原样式之后加载，做差异化点缀 */
+:root {
+  --zs-primary: #3b5bdb;
+  --zs-primary-light: #edf0ff;
+  --zs-accent: #ff7a59;
+  --zs-bg: #f5f6fa;
+}
+body { background: var(--zs-bg) !important; }
+.mint-header { background: linear-gradient(135deg, #3b5bdb 0%, #5c7cfa 100%) !important; }
+.index-search { border-radius: 20px !important; box-shadow: 0 2px 8px rgba(59,91,219,.12); }
+/* Feed 卡片化 */
+.blog-list .item, .blog-items .item, .blog { background: #fff; border-radius: 12px; box-shadow: 0 2px 10px rgba(23,28,64,.06); margin: 0 12px 12px !important; overflow: hidden; }
+/* 分类宫格 */
+.type-box, .types { background: transparent !important; }
+.type, .type-box .item { border-radius: 12px; }
+/* 按钮统一主色 */
+.el-button--primary { background: var(--zs-primary) !important; border-color: var(--zs-primary) !important; }
+/* 底部导航：毛玻璃 + 主色高亮 */
+.foot { background: rgba(255,255,255,.92) !important; backdrop-filter: blur(8px); border-top: 1px solid #eceef5; }
+.foot-box.active, .foot-box.active .foot-text { color: var(--zs-primary) !important; }
+/* 详情页头图圆角 */
+.header-img, .blog-cover { border-radius: 0 0 16px 16px; }
+/* 发布悬浮按钮珊瑚色点缀 */
+.add-btn { filter: hue-rotate(200deg) saturate(1.15); }
+/* 登录页品牌区 */
+.zs-brand { text-align: center; padding: 40px 0 8px; }
+.zs-brand img { width: 72px; height: 72px; border-radius: 18px; box-shadow: 0 6px 18px rgba(59,91,219,.25); }
+.zs-brand h2 { margin: 10px 0 4px; font-size: 20px; color: #1c2440; letter-spacing: 2px; }
+.zs-brand p { margin: 0; font-size: 13px; color: #8a90a6; }

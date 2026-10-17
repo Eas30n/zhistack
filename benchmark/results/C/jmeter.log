@@ -1,0 +1,12 @@
+WARNING: package sun.awt.X11 not in java.desktop
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+Creating summariser <summary>
+Created the tree successfully using D:/code/java/HMDP/hm-dianping/benchmark/seckill-1000.jmx
+Starting standalone test @ 2026 Oct 17 11:02:44 CST (1792206164104)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+summary =   1000 in 00:00:10 =   99.2/s Avg:  1641 Min:    14 Max:  4580 Err:     0 (0.00%)
+Tidying up ...    @ 2026 Oct 17 11:02:54 CST (1792206174317)
+... end of run
