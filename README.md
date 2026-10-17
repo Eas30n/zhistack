@@ -19,11 +19,12 @@
 ```bash
 # 方式一：Docker Compose 一键启动（MySQL 自动导入 zhistack.sql，含演示数据）
 docker compose up -d --build
-# 访问 http://localhost:8081（前端演示页面在 demo-frontend/，可配 nginx 或直接访问）
+# 访问 http://localhost:8080（nginx 托管 demo-frontend，/api 反向代理到后端 :8081）
+# 国内网络可切换镜像源：BASE_REGISTRY=docker.m.daocloud.io/ docker compose up -d --build
 
 # 方式二：本地运行
 # 1. 建库：导入 src/main/resources/db/zhistack.sql
-# 2. 配置：环境变量注入 MYSQL_PASSWORD / SPRING_REDIS_HOST（见 application.yaml）
+# 2. 配置：环境变量 MYSQL_HOST / MYSQL_PASSWORD / REDIS_HOST（均有本地默认值，见 application.yaml）
 # 3. 启动：mvn spring-boot:run 或 java -jar target/zhistack-0.0.1-SNAPSHOT.jar
 #    注：JDK 17 运行需 --add-opens java.base/java.lang.invoke=ALL-UNNAMED（MyBatis-Plus 3.4.x 兼容）
 
